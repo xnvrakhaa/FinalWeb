@@ -1,0 +1,174 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Log In | STEPUP Sneaker Store</title>
+
+    <link rel="stylesheet"
+          href="./vendor/bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/assignment5.css">
+    <link rel="stylesheet" href="./css/assignment6.css">
+    <link rel="stylesheet" href="./css/auth.css">
+
+    <script src="./js/theme.js" defer></script>
+    <script src="./js/auth.js" defer></script>
+</head>
+
+<body>
+<a class="skip-link px-3 py-2"
+   href="#main-content">
+    Skip to main content
+</a>
+
+<header id="main-header">
+    <nav class="navbar bootstrap-nav navbar-expand-lg
+                bg-dark py-3"
+         data-bs-theme="dark"
+         aria-label="Main navigation">
+
+        <div class="container">
+            <a class="navbar-brand text-warning fw-bold fs-3"
+               href="index.html">
+                STEPUP
+            </a>
+
+            <button class="navbar-toggler" type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#mainMenu"
+                    aria-controls="mainMenu"
+                    aria-expanded="false"
+                    aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <button type="button"
+                    class="btn btn-outline-warning ms-3"
+                    id="theme-toggle"
+                    aria-pressed="false">
+                Day mode
+            </button>
+
+            <div class="collapse navbar-collapse"
+                 id="mainMenu">
+                <ul class="navbar-nav ms-auto gap-lg-3">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">
+                            Home
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="catalog.html">
+                            Catalog
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="gallery.html">
+                            Gallery
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">
+                            About Us
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">
+                            Contact
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active fw-bold"
+                           aria-current="page"
+                           href="login.html">
+                            Log In
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+</header>
+
+<main id="main-content">
+    <section class="auth-section">
+        <div class="auth-card">
+
+            <p class="section-label">WELCOME BACK</p>
+            <h1>Log In to STEPUP</h1>
+
+            <p class="auth-description">
+                Enter your demo account details to continue.
+            </p>
+
+            <form id="login-form" novalidate>
+
+                <div class="auth-field">
+                    <label for="login-email">Email</label>
+                    <input
+                            id="login-email"
+                            name="email"
+                            type="text"
+                            inputmode="email"
+                            autocomplete="email"
+                            aria-describedby="login-email-error">
+
+                    <p class="field-error"
+                       id="login-email-error"></p>
+                </div>
+
+                <div class="auth-field">
+                    <label for="login-password">Password</label>
+                    <input
+                            id="login-password"
+                            name="password"
+                            type="password"
+                            autocomplete="current-password"
+                            aria-describedby="login-password-error">
+
+                    <p class="field-error"
+                       id="login-password-error"></p>
+                </div>
+
+                <button type="submit"
+                        class="button auth-submit">
+                    Log In
+                </button>
+
+                <p id="login-result"
+                   role="status"
+                   aria-live="polite"></p>
+            </form>
+
+            <p class="auth-switch">
+                Don't have an account?
+                <a href="signup.html">Create Account</a>
+            </p>
+
+        </div>
+    </section>
+</main>
+
+<footer>
+    <p>
+        Created by Tazhmaganbetov Rakhat
+        and Tauekel Islam | Group SE-2508
+    </p>
+    <p>
+        &copy; 2026 STEPUP Sneaker Store.
+        All rights reserved.
+    </p>
+</footer>
+
+<script src="./vendor/bootstrap/bootstrap.bundle.min.js">
+</script>
+
+<!-- Shared account navigation -->
+<script src="./js/navigation.js" defer></script>
+
+</body>
+</html>

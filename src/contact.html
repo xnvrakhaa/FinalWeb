@@ -1,0 +1,529 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Created by Tazhmaganbetov Rakhat and Tauekel Islam, SE-2508 -->
+  <title>Contact | STEPUP Sneaker Store</title>
+
+  <link rel="stylesheet" href="./vendor/bootstrap/bootstrap.min.css">
+  <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="./css/assignment5.css">
+  <link rel="stylesheet" href="./css/assignment6.css">
+
+  <script src="https://code.jquery.com/jquery-4.0.0.min.js" defer></script>
+  <script src="vendor/jquery/jquery-fallback.js" defer></script>
+  <script src="./js/theme.js" defer></script>
+  <script src="./js/assignment6.js" defer></script>
+</head>
+
+<body>
+<div id="scroll-progress" role="progressbar"
+     aria-label="Page scroll progress"
+     aria-valuemin="0" aria-valuemax="100"
+     aria-valuenow="0"></div>
+
+<a class="skip-link px-3 py-2" href="#main-content">
+  Skip to main content
+</a>
+
+<!-- Header and navigation -->
+<header id="main-header">
+  <nav class="navbar bootstrap-nav navbar-expand-lg bg-dark py-3"
+       data-bs-theme="dark"
+       aria-label="Main navigation">
+
+    <div class="container">
+      <a class="navbar-brand text-warning fw-bold fs-3"
+         href="index.html">
+        STEPUP
+      </a>
+
+      <button class="navbar-toggler" type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#mainMenu"
+              aria-controls="mainMenu"
+              aria-expanded="false"
+              aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <button type="button"
+              class="btn btn-outline-warning ms-3"
+              id="theme-toggle"
+              aria-pressed="false">
+        Day mode
+      </button>
+
+      <div class="collapse navbar-collapse" id="mainMenu">
+        <ul class="navbar-nav ms-auto gap-lg-3">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="catalog.html">Catalog</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="gallery.html">Gallery</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="about.html">About Us</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active fw-bold"
+               aria-current="page"
+               href="contact.html">
+              Contact
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+</header>
+
+<main id="main-content" tabindex="-1">
+
+  <!-- Page heading -->
+  <section class="page-banner">
+    <p class="section-label">GET IN TOUCH</p>
+    <h1>Contact Us</h1>
+    <p>
+      Try our step-by-step sneaker request.
+      This is a demo: no order is placed
+      and no information is sent.
+    </p>
+  </section>
+
+  <section class="contact-section">
+
+    <!-- Store information -->
+    <div class="contact-information">
+      <img class="contact-image"
+           src="./img/contact-sneakers.jpg"
+           alt="Sneakers available at STEPUP store">
+
+      <p class="section-label">CONTACT DETAILS</p>
+      <h2>Let’s Find Your Perfect Pair</h2>
+
+      <p>
+        Contact our team if you need help choosing a model,
+        size or color.
+      </p>
+
+      <div class="contact-card">
+        <h3>Address</h3>
+        <p>Astana, Kazakhstan</p>
+      </div>
+
+      <div class="contact-card">
+        <h3>Phone</h3>
+        <p>
+          <a href="tel:+7776757325">8 776 757 325</a>
+        </p>
+      </div>
+
+      <div class="contact-card">
+        <h3>Email</h3>
+        <p>
+          <a href="mailto:rtazmaganbetov12@gmail.com">
+            rtazmaganbetov12@gmail.com
+          </a>
+        </p>
+      </div>
+
+      <div class="contact-card">
+        <h3>Working Hours</h3>
+        <ul class="working-hours">
+          <li>Monday–Friday: 10:00–20:00</li>
+          <li>Saturday–Sunday: 11:00–19:00</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Order form -->
+    <div class="form-wrapper p-3 p-lg-4">
+      <h2>Order Request</h2>
+
+      <form id="order-form" data-bs-theme="dark" novalidate>
+
+        <!-- STEP 1 -->
+        <fieldset class="order-step" data-step="0">
+          <legend>Your details</legend>
+
+          <div class="row g-3">
+
+            <div class="col-12 col-md-6">
+              <label for="customer-name" class="form-label">
+                Name
+              </label>
+              <input type="text"
+                     class="form-control"
+                     id="customer-name"
+                     name="customer-name"
+                     placeholder="Enter your name"
+                     autocomplete="name"
+                     aria-describedby="customer-name-error">
+              <p class="field-error" id="customer-name-error"></p>
+            </div>
+
+            <div class="col-12 col-md-6">
+              <label for="customer-email" class="form-label">
+                Email
+              </label>
+              <input type="text"
+                     inputmode="email"
+                     class="form-control"
+                     id="customer-email"
+                     name="customer-email"
+                     placeholder="example@email.com"
+                     autocomplete="email"
+                     aria-describedby="customer-email-error">
+              <p class="field-error" id="customer-email-error"></p>
+            </div>
+
+            <div class="col-12">
+              <label for="customer-phone" class="form-label">
+                Phone Number
+              </label>
+              <input type="tel"
+                     class="form-control"
+                     id="customer-phone"
+                     name="customer-phone"
+                     placeholder="+7 777 123 4567"
+                     autocomplete="tel"
+                     aria-describedby="customer-phone-error">
+              <p class="field-error" id="customer-phone-error"></p>
+            </div>
+
+          </div>
+        </fieldset>
+
+        <!-- STEP 2 -->
+        <fieldset class="order-step" data-step="1" hidden>
+          <legend>Your sneakers</legend>
+
+          <div class="row g-3">
+
+            <div class="col-12">
+              <label for="sneaker-model" class="form-label">
+                Sneaker model
+              </label>
+
+              <select class="form-select"
+                      id="sneaker-model"
+                      name="sneaker-model"
+                      aria-describedby="sneaker-model-error">
+                <option value="">Select a model</option>
+                <option value="air-max-270">Nike Air Max 270</option>
+                <option value="campus-00s">Adidas Campus 00s</option>
+                <option value="new-balance-530">New Balance 530</option>
+                <option value="air-force-1">Nike Air Force 1</option>
+                <option value="adidas-forum-low">Adidas Forum Low</option>
+                <option value="new-balance-574">New Balance 574</option>
+              </select>
+
+              <p class="field-error" id="sneaker-model-error"></p>
+            </div>
+
+            <div class="col-12">
+              <fieldset class="m-0">
+                <legend class="fs-6 mb-2">
+                  Select your size
+                </legend>
+
+                <div class="form-check form-check-inline">
+                  <input class="form-check-input"
+                         type="radio" name="size"
+                         id="size39" value="39"
+                         aria-describedby="size39-error">
+                  <label class="form-check-label" for="size39">
+                    39
+                  </label>
+                </div>
+
+                <div class="form-check form-check-inline">
+                  <input class="form-check-input"
+                         type="radio" name="size"
+                         id="size40" value="40">
+                  <label class="form-check-label" for="size40">
+                    40
+                  </label>
+                </div>
+
+                <div class="form-check form-check-inline">
+                  <input class="form-check-input"
+                         type="radio" name="size"
+                         id="size41" value="41">
+                  <label class="form-check-label" for="size41">
+                    41
+                  </label>
+                </div>
+
+                <div class="form-check form-check-inline">
+                  <input class="form-check-input"
+                         type="radio" name="size"
+                         id="size42" value="42">
+                  <label class="form-check-label" for="size42">
+                    42
+                  </label>
+                </div>
+
+                <div class="form-check form-check-inline">
+                  <input class="form-check-input"
+                         type="radio" name="size"
+                         id="size43" value="43">
+                  <label class="form-check-label" for="size43">
+                    43
+                  </label>
+                </div>
+              </fieldset>
+
+              <p class="field-error" id="size39-error"></p>
+            </div>
+
+            <div class="col-12">
+              <label for="favorite-color" class="form-label">
+                Choose your favorite color
+              </label>
+              <input type="color"
+                     class="form-control form-control-color"
+                     id="favorite-color"
+                     name="favorite-color"
+                     value="#ff5c00">
+            </div>
+
+            <div class="col-12">
+              <label for="customer-message" class="form-label">
+                Message
+              </label>
+              <textarea class="form-control"
+                        id="customer-message"
+                        name="customer-message"
+                        rows="4"
+                        placeholder="Write your question or additional information"></textarea>
+            </div>
+
+          </div>
+        </fieldset>
+
+        <!-- STEP 3 -->
+        <fieldset class="order-step" data-step="2" hidden>
+          <legend>Review your request</legend>
+
+          <div class="row g-3">
+            <dl id="order-summary"></dl>
+
+            <div class="col-12">
+              <div class="form-check">
+                <input class="form-check-input"
+                       type="checkbox"
+                       id="agreement"
+                       name="agreement"
+                       aria-describedby="agreement-error">
+                <label class="form-check-label"
+                       for="agreement">
+                  I confirm that the entered information is correct.
+                </label>
+              </div>
+              <p class="field-error" id="agreement-error"></p>
+            </div>
+          </div>
+        </fieldset>
+
+        <p id="order-progress" role="status">
+          Step 1 of 3: Your details
+        </p>
+
+        <div class="order-actions">
+          <button id="order-back" class="button"
+                  type="button" hidden>
+            Back
+          </button>
+
+          <button id="order-next" class="button"
+                  type="button">
+            Next
+          </button>
+
+          <button id="order-submit" class="button"
+                  type="submit" hidden>
+            Check Request
+          </button>
+
+          <button class="button" type="reset">
+            Reset form
+          </button>
+        </div>
+
+        <p id="form-result" role="status"></p>
+      </form>
+    </div>
+  </section>
+
+  <!-- Share catalog -->
+  <section class="interactive-section"
+           aria-labelledby="share-heading">
+    <h2 id="share-heading">Share our catalog</h2>
+
+    <p id="catalog-link">
+      https://tauekelislam-collab.github.io/web/catalog.html
+    </p>
+
+    <button class="button"
+            type="button"
+            id="copy-catalog"
+            aria-describedby="copy-feedback">
+      <span class="copy-icon" aria-hidden="true">⧉</span>
+      Copy link
+    </button>
+
+    <span id="copy-feedback" role="status"></span>
+  </section>
+
+  <!-- Demo account form -->
+  <section class="interactive-section"
+           aria-labelledby="account-heading">
+    <h2 id="account-heading">Create a STEPUP Account</h2>
+
+    <p>
+      Practice registration form. No account is created
+      or information saved. Use a sample password.
+    </p>
+
+    <form id="account-form" class="demo-form" novalidate>
+      <label for="account-name">Name</label>
+      <input id="account-name"
+             autocomplete="name"
+             aria-describedby="account-name-error">
+      <p class="field-error" id="account-name-error"></p>
+
+      <label for="account-email">Email</label>
+      <input id="account-email"
+             type="text"
+             inputmode="email"
+             autocomplete="email"
+             aria-describedby="account-email-error">
+      <p class="field-error" id="account-email-error"></p>
+
+      <label for="account-password">
+        Password (at least 8 characters)
+      </label>
+      <input id="account-password"
+             type="password"
+             autocomplete="new-password"
+             aria-describedby="account-password-error">
+      <p class="field-error" id="account-password-error"></p>
+
+      <label for="account-confirm">Confirm password</label>
+      <input id="account-confirm"
+             type="password"
+             autocomplete="new-password"
+             aria-describedby="account-confirm-error">
+      <p class="field-error" id="account-confirm-error"></p>
+
+      <button class="button" type="submit">
+        Check Registration
+      </button>
+
+      <p id="account-result" role="status"></p>
+    </form>
+  </section>
+
+</main>
+
+<!-- Footer -->
+<footer>
+  <div class="site-tools">
+    <button class="button"
+            type="button"
+            id="change-background">
+      Change Background
+    </button>
+
+    <button class="button"
+            type="button"
+            id="sound-toggle"
+            aria-pressed="false">
+      Sound: off
+    </button>
+
+    <button class="button"
+            type="button"
+            id="open-subscription">
+      Subscribe
+    </button>
+  </div>
+
+  <p>
+    Current local date and time:
+    <time id="current-time"></time>
+  </p>
+
+  <p>
+    Created by Tazhmaganbetov Rakhat and Tauekel Islam |
+    Group SE-2508
+  </p>
+
+  <p>
+    &copy; 2026 STEPUP Sneaker Store.
+    All rights reserved.
+  </p>
+</footer>
+
+<script src="vendor/bootstrap/bootstrap.bundle.min.js"></script>
+
+<!-- Subscription dialog -->
+<dialog id="subscription-dialog"
+        aria-labelledby="subscription-heading">
+
+  <button type="button"
+          id="close-subscription"
+          class="dialog-close"
+          aria-label="Close subscription form">
+    &times;
+  </button>
+
+  <h2 id="subscription-heading">Stay in the Loop</h2>
+  <p>
+    Try our demo subscription.
+    No email is sent or saved.
+  </p>
+
+  <form id="subscription-form"
+        class="demo-form"
+        novalidate>
+
+    <label for="subscription-email">Email</label>
+    <input id="subscription-email"
+           type="text"
+           inputmode="email"
+           autocomplete="email"
+           aria-describedby="subscription-error">
+    <p class="field-error" id="subscription-error"></p>
+
+    <button class="button" type="submit">
+      Check Subscription
+    </button>
+
+    <p id="subscription-result" role="status"></p>
+  </form>
+</dialog>
+
+<!-- Existing JavaScript and validation -->
+<script src="./js/validation.js" defer></script>
+<script src="./js/script.js" defer></script>
+<script src="./js/assignment5.js" defer></script>
+
+<div id="store-toast"
+     role="status"
+     aria-live="polite"
+     hidden></div>
+
+<!-- Shared account navigation -->
+<script src="./js/navigation.js" defer></script>
+
+</body>
+</html>

@@ -1,0 +1,189 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Sign Up | STEPUP Sneaker Store</title>
+
+    <!-- Existing STEPUP styles -->
+    <link rel="stylesheet"
+          href="./vendor/bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/assignment5.css">
+    <link rel="stylesheet" href="./css/assignment6.css">
+
+    <!-- New registration styles -->
+    <link rel="stylesheet" href="./css/auth.css">
+
+    <!-- Existing theme functionality -->
+    <script src="./js/theme.js" defer></script>
+
+    <!-- New registration functionality -->
+    <script src="./js/auth.js" defer></script>
+</head>
+
+<body>
+<header id="main-header">
+    <nav class="navbar bootstrap-nav navbar-expand-lg
+                bg-dark py-3"
+         data-bs-theme="dark"
+         aria-label="Main navigation">
+
+        <div class="container">
+            <a class="navbar-brand text-warning fw-bold fs-3"
+               href="index.html">
+                STEPUP
+            </a>
+
+            <button type="button"
+                    class="btn btn-outline-warning ms-3"
+                    id="theme-toggle"
+                    aria-pressed="false">
+                Day mode
+            </button>
+
+            <button class="navbar-toggler" type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#mainMenu"
+                    aria-controls="mainMenu"
+                    aria-expanded="false"
+                    aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse"
+                 id="mainMenu">
+                <ul class="navbar-nav ms-auto gap-lg-3">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="catalog.html">Catalog</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="gallery.html">Gallery</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">About Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active fw-bold"
+                           aria-current="page"
+                           href="signup.html">Sign Up</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+</header>
+
+<main id="main-content">
+    <section class="auth-section">
+        <div class="auth-card">
+            <p class="section-label">JOIN STEPUP</p>
+            <h1>Create Your Account</h1>
+            <p class="auth-description">
+                Join our sneaker community and explore STEPUP.
+            </p>
+
+            <form id="signup-form" novalidate>
+
+                <div class="auth-field">
+                    <label for="signup-name">Full Name</label>
+                    <input id="signup-name"
+                           name="name"
+                           type="text"
+                           autocomplete="name"
+                           aria-describedby="signup-name-error">
+                    <p class="field-error"
+                       id="signup-name-error"></p>
+                </div>
+
+                <div class="auth-field">
+                    <label for="signup-email">Email</label>
+                    <input id="signup-email"
+                           name="email"
+                           type="text"
+                           inputmode="email"
+                           autocomplete="email"
+                           aria-describedby="signup-email-error">
+                    <p class="field-error"
+                       id="signup-email-error"></p>
+                </div>
+
+                <div class="auth-field">
+                    <label for="signup-password">Password</label>
+                    <input id="signup-password"
+                           name="password"
+                           type="password"
+                           autocomplete="new-password"
+                           aria-describedby="signup-password-error">
+
+                    <p class="auth-hint">
+                        At least 8 characters, uppercase,
+                        lowercase, number and symbol.
+                    </p>
+                    <p class="field-error"
+                       id="signup-password-error"></p>
+                </div>
+
+                <div class="auth-field">
+                    <label for="signup-confirm">
+                        Confirm Password
+                    </label>
+                    <input id="signup-confirm"
+                           name="confirm"
+                           type="password"
+                           autocomplete="new-password"
+                           aria-describedby="signup-confirm-error">
+                    <p class="field-error"
+                       id="signup-confirm-error"></p>
+                </div>
+
+                <button type="submit"
+                        class="button auth-submit">
+                    Create Account
+                </button>
+
+                <p id="signup-result"
+                   role="status"
+                   aria-live="polite"></p>
+            </form>
+
+            <p class="auth-hint">
+                Demo only. Use fictional account details
+                and a password you do not use elsewhere.
+            </p>
+            <p class="auth-switch">
+                Already have an account?
+                <a href="login.html">Log In</a>
+            </p>
+        </div>
+    </section>
+</main>
+
+<footer>
+    <p>
+        Created by Tazhmaganbetov Rakhat
+        and Tauekel Islam | Group SE-2508
+    </p>
+    <p>
+        &copy; 2026 STEPUP Sneaker Store.
+        All rights reserved.
+    </p>
+</footer>
+
+<script src="./vendor/bootstrap/bootstrap.bundle.min.js">
+</script>
+
+<!-- Shared account navigation -->
+<script src="./js/navigation.js" defer></script>
+
+</body>
+</html>

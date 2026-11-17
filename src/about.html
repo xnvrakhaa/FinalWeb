@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Created by Tazhmaganbetov Rakhat and Tauekel Islam, SE-2508 -->
+  <title>About Us | STEPUP Sneaker Store</title>
+
+  <link
+          rel="stylesheet"
+          href="./vendor/bootstrap/bootstrap.min.css"
+  >
+  <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="./css/assignment5.css">
+  <link rel="stylesheet" href="./css/assignment6.css">
+  <script src="https://code.jquery.com/jquery-4.0.0.min.js" defer></script>
+  <script src="vendor/jquery/jquery-fallback.js" defer></script>
+  <script src="./js/theme.js" defer></script>
+  <script src="./js/assignment6.js" defer></script>
+</head>
+
+<body>
+<div id="scroll-progress" role="progressbar" aria-label="Page scroll progress" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0"></div>
+
+<!-- Header and navigation -->
+<header id="main-header">
+  <nav
+          class="navbar bootstrap-nav navbar-expand-lg bg-dark py-3"
+          data-bs-theme="dark"
+          aria-label="Main navigation"
+  >
+    <div class="container">
+
+      <a
+              class="navbar-brand text-warning fw-bold fs-3"
+              href="index.html"
+      >
+        STEPUP
+      </a>
+
+      <button
+              class="navbar-toggler"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#mainMenu"
+              aria-controls="mainMenu"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <button type="button" class="btn btn-outline-warning ms-3" id="theme-toggle" aria-pressed="false">Day mode</button>
+      <div class="collapse navbar-collapse" id="mainMenu">
+        <ul class="navbar-nav ms-auto gap-lg-3">
+
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">
+              Home
+            </a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="catalog.html">
+              Catalog
+            </a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="gallery.html">
+              Gallery
+            </a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link active fw-bold"
+               aria-current="page"
+               href="about.html">
+              About Us
+            </a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="contact.html">
+              Contact
+            </a>
+          </li>
+
+        </ul>
+      </div>
+
+    </div>
+  </nav>
+</header>
+
+<main>
+
+  <!-- Page introduction -->
+  <section class="page-banner">
+    <p class="section-label">OUR STORY</p>
+    <h1>About STEPUP</h1>
+    <p>
+      STEPUP is a modern sneaker store created for people who value
+      style, comfort and individuality.
+    </p>
+  </section>
+
+  <!-- Store story -->
+  <section class="about-story">
+    <div class="about-text">
+      <p class="section-label">WHO WE ARE</p>
+      <h2>More Than Just a Sneaker Store</h2>
+
+      <p>
+        STEPUP was created as a student project with a simple goal:
+        to help customers find comfortable and stylish sneakers
+        from popular brands in one place.
+      </p>
+
+      <p>
+        Our store offers sneakers for daily activities, sports and
+        casual outfits. We focus on quality products, convenient
+        shopping and friendly customer service.
+      </p>
+
+      <a class="button" href="catalog.html">
+        Explore Catalog
+      </a>
+    </div>
+
+    <div class="about-image">
+      <img
+        src="./img/hero-sneakers.jpg"
+        alt="Sneakers displayed in the STEPUP store"
+      >
+    </div>
+  </section>
+
+  <!-- Mission and values -->
+  <section class="values-section">
+    <div class="section-heading">
+      <p class="section-label">OUR VALUES</p>
+      <h2>What Is Important to Us?</h2>
+      <p>
+        These principles help us create a better shopping
+        experience for every customer.
+      </p>
+    </div>
+
+    <div class="values-container">
+      <article class="value-card">
+        <span class="value-number">01</span>
+        <h3>Quality</h3>
+        <p>
+          We select reliable sneakers from well-known and
+          trusted brands.
+        </p>
+      </article>
+
+      <article class="value-card">
+        <span class="value-number">02</span>
+        <h3>Comfort</h3>
+        <p>
+          We help customers choose the correct model and size
+          for comfortable everyday use.
+        </p>
+      </article>
+
+      <article class="value-card">
+        <span class="value-number">03</span>
+        <h3>Individual Style</h3>
+        <p>
+          We believe that sneakers are an important part of
+          personal style and self-expression.
+        </p>
+      </article>
+    </div>
+  </section>
+
+  <!-- How the store works -->
+  <section class="work-process">
+    <div class="process-content">
+      <p class="section-label">OUR PROCESS</p>
+      <h2>How We Work</h2>
+
+      <ol class="process-list">
+        <li>
+          We select popular and comfortable sneaker models.
+        </li>
+        <li>
+          We provide clear information about prices and sizes.
+        </li>
+        <li>
+          Customers choose a model from our online catalog.
+        </li>
+        <li>
+          We receive the order and contact the customer.
+        </li>
+        <li>
+          The sneakers are prepared for fast delivery.
+        </li>
+      </ol>
+    </div>
+  </section>
+
+  <!-- Required team members section -->
+  <section class="team-section">
+    <div class="section-heading">
+      <p class="section-label">OUR TEAM</p>
+      <h2>About the Team Members</h2>
+      <p>
+        The STEPUP website was created by two students from
+        group SE-2508.
+      </p>
+    </div>
+
+    <div class="team-container">
+
+      <article class="team-card">
+        <img
+          class="profile-img"
+          src="./img/rakhat.jpg"
+          alt="Tazhmaganbetov Rakhat"
+        >
+        <h3>Tazhmaganbetov Rakhat</h3>
+        <p class="team-role">Front-End Developer</p>
+
+        <p>
+          Rakhat created the Home and Catalog pages. He worked
+          with product cards, images, lists and the comparison
+          table.
+        </p>
+
+        <ul class="member-tasks">
+          <li>Home page</li>
+          <li>Catalog page</li>
+          <li>Product cards</li>
+          <li>Comparison table</li>
+        </ul>
+      </article>
+
+      <article class="team-card">
+        <img
+          class="profile-img"
+          src="./img/islam.JPG"
+          alt="Tauekel Islam"
+        >
+
+        <h3>Tauekel Islam</h3>
+        <p class="team-role">Front-End Developer</p>
+
+        <p>
+          Islam created the About Us and Contact pages. He worked
+          with team information, structured content and the
+          customer contact form.
+        </p>
+
+        <ul class="member-tasks">
+          <li>About Us page</li>
+          <li>Contact page</li>
+          <li>Team information</li>
+          <li>Contact form</li>
+        </ul>
+      </article>
+
+    </div>
+  </section>
+
+</main>
+
+<!-- Footer -->
+<footer>
+  <div class="site-tools">
+    <button class="button" type="button" id="change-background">Change Background</button>
+    <button class="button" type="button" id="sound-toggle" aria-pressed="false">Sound: off</button>
+    <button class="button" type="button" id="open-subscription">Subscribe</button>
+  </div>
+  <p>Current local date and time: <time id="current-time"></time></p>
+
+  <p>
+    Created by Tazhmaganbetov Rakhat and Tauekel Islam |
+    Group SE-2508
+  </p>
+  <p>&copy; 2026 STEPUP Sneaker Store. All rights reserved.</p>
+</footer>
+<script src="vendor/bootstrap/bootstrap.bundle.min.js"></script>
+
+<dialog id="subscription-dialog" aria-labelledby="subscription-heading">
+  <button type="button" id="close-subscription" class="dialog-close" aria-label="Close subscription form">&times;</button>
+  <h2 id="subscription-heading">Stay in the Loop</h2>
+  <p>Try our demo subscription. No email is sent or saved.</p>
+  <form id="subscription-form" class="demo-form" novalidate>
+    <label for="subscription-email">Email</label>
+
+    <input
+            id="subscription-email"
+            type="text"
+            inputmode="email"
+            autocomplete="email"
+            aria-describedby="subscription-error">
+
+    <p class="field-error" id="subscription-error"></p>
+    <button class="button" type="submit">Check Subscription</button>
+    <p id="subscription-result" role="status"></p>
+  </form>
+</dialog>
+<script src="./js/script.js" defer></script>
+<script src="./js/assignment5.js" defer></script>
+
+<script src="./js/validation.js" defer></script>
+<div id="store-toast" role="status" aria-live="polite" hidden></div>
+
+<!-- Shared account navigation -->
+<script src="./js/navigation.js" defer></script>
+
+</body>
+</html>

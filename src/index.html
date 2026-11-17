@@ -1,0 +1,507 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Created by Tazhmaganbetov Rakhat and Tauyekel Islam -->
+  <title>Home | STEPUP Sneaker Store</title>
+
+  <!-- Bootstrap -->
+  <link
+          rel="stylesheet"
+          href="./vendor/bootstrap/bootstrap.min.css"
+  >
+
+  <!-- Our styles -->
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="./css/assignment5.css">
+  <link rel="stylesheet" href="./css/assignment6.css">
+  <script src="https://code.jquery.com/jquery-4.0.0.min.js" defer></script>
+  <script src="vendor/jquery/jquery-fallback.js" defer></script>
+  <script src="./js/theme.js" defer></script>
+  <script src="./js/assignment6.js" defer></script>
+</head>
+
+<body>
+<div id="scroll-progress" role="progressbar" aria-label="Page scroll progress" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0"></div>
+<a class="skip-link px-3 py-2" href="#main-content">
+  Skip to main content
+</a>
+<!-- Website header and navigation -->
+<header id="main-header">
+  <nav
+          class="navbar bootstrap-nav navbar-expand-lg bg-dark py-3"
+          data-bs-theme="dark"
+          aria-label="Main navigation"
+  >
+    <div class="container">
+
+      <a
+              class="navbar-brand text-warning fw-bold fs-3"
+              href="index.html"
+      >
+        STEPUP
+      </a>
+
+      <button
+              class="navbar-toggler"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#mainMenu"
+              aria-controls="mainMenu"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <button type="button" class="btn btn-outline-warning ms-3" id="theme-toggle" aria-pressed="false">Day mode</button>
+      <div class="collapse navbar-collapse" id="mainMenu">
+        <ul class="navbar-nav ms-auto gap-lg-3">
+
+          <li class="nav-item">
+            <a class="nav-link active fw-bold"
+               aria-current="page"
+               href="index.html">
+              Home
+            </a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="catalog.html">
+              Catalog
+            </a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="gallery.html">
+              Gallery
+            </a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="about.html">
+              About Us
+            </a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="contact.html">
+              Contact
+            </a>
+          </li>
+
+        </ul>
+      </div>
+
+    </div>
+  </nav>
+</header>
+
+<main id="main-content" tabindex="-1">
+
+  <!-- Main banner: two Bootstrap columns -->
+  <section class="container py-3 py-md-4 py-lg-5">
+    <div class="row align-items-center g-4">
+
+      <div class="col-12 col-lg-6">
+        <p class="hero-label mb-2">NEW COLLECTION 2026</p>
+
+        <h1 class="display-4 fw-bold mb-3">
+          Find Your Perfect Pair
+        </h1>
+
+        <p class="hero-description mb-4">
+          Discover stylish and comfortable sneakers from popular
+          brands. Choose the pair that matches your lifestyle.
+        </p>
+
+        <a class="btn btn-warning btn-lg" href="catalog.html">
+          Shop Now
+        </a>
+      </div>
+
+      <div class="col-12 col-lg-6">
+        <img
+                src="img/hero-sneakers.jpg"
+                alt="Modern white and pink sneakers"
+                class="img-fluid rounded-4 w-100"
+        >
+      </div>
+
+    </div>
+  </section>
+
+  <section class="container py-4" aria-label="Our collection in numbers">
+    <div class="store-stats">
+      <p><strong class="number-counter" data-target="6">0</strong>Available models</p>
+      <p><strong class="number-counter" data-target="3">0</strong>Featured brands</p>
+      <p><strong class="number-counter" data-target="9">0</strong>Gallery styles</p>
+    </div>
+  </section>
+  <!-- Benefits of the store -->
+  <section class="benefits px-3 px-md-4 px-lg-5 py-3 py-md-4 py-lg-5">
+    <div class="section-heading mx-auto mt-0 mb-3 mb-lg-5">
+      <p class="section-label">OUR BENEFITS</p>
+      <h2>Why Choose STEPUP?</h2>
+      <p>
+        We make buying sneakers simple, safe and comfortable.
+      </p>
+    </div>
+
+    <div class="benefit-container mx-auto">
+      <article class="benefit-card p-3 p-lg-4">
+        <h3>Original Products</h3>
+        <p>
+          We offer authentic sneakers from trusted and popular
+          sportswear brands.
+        </p>
+      </article>
+
+      <article class="benefit-card p-3 p-lg-4">
+        <h3>Fast Delivery</h3>
+        <p>
+          We deliver orders quickly and carefully throughout
+          Astana and other cities of Kazakhstan.
+        </p>
+      </article>
+
+      <article class="benefit-card p-3 p-lg-4">
+        <h3>Easy Returns</h3>
+        <p>
+          Customers can return or exchange unsuitable products
+          according to our return policy.
+        </p>
+      </article>
+    </div>
+  </section>
+
+  <!-- Popular models: three Bootstrap columns -->
+  <section class="container py-3 py-md-4 py-lg-5">
+
+    <div class="section-heading mx-auto mt-0 mb-3 mb-lg-5">
+      <p class="section-label">POPULAR MODELS</p>
+      <h2>Trending Sneakers</h2>
+      <p>
+        Explore some of the most popular models in our collection.
+      </p>
+    </div>
+    <!-- Group of navigation buttons -->
+    <div class="text-center mb-4">
+      <div class="btn-group" role="group" aria-label="Store navigation">
+
+        <a class="btn btn-outline-warning" href="catalog.html">
+          Catalog
+        </a>
+
+        <a class="btn btn-outline-warning" href="gallery.html">
+          Gallery
+        </a>
+
+        <a class="btn btn-outline-warning" href="contact.html">
+          Contact
+        </a>
+
+      </div>
+    </div>
+
+
+      <!-- Task 8: Bootstrap cards -->
+
+    <!-- Task 8: Bootstrap cards -->
+    <div class="card-group row g-4">
+
+      <div class="col-12 col-md-6 col-lg-4">
+          <article class="card h-100 bg-dark text-white border-secondary">
+          <img
+                  src="img/nike-air-max.jpg"
+                  class="card-img-top sneaker-card-image"
+                  alt="Nike Air Max 270 sneakers"
+          >
+
+          <div class="card-body d-flex flex-column p-3 p-lg-4">
+            <p class="text-warning mb-2">Nike</p>
+
+            <h3 class="card-title h5">Nike Air Max 270</h3>
+
+            <p class="card-text">
+              Lightweight sneakers with soft cushioning
+              for comfortable everyday wear.
+            </p>
+
+            <p class="fw-bold text-warning mb-3">65,000 KZT</p>
+
+            <a
+                    class="btn btn-outline-warning btn-sm mt-auto align-self-start"
+                    href="catalog.html"
+            >
+              View product
+            </a>
+          </div>
+        </article>
+        </div>
+
+          <div class="col-12 col-md-6 col-lg-4">
+            <article class="card h-100 bg-dark text-white border-secondary">
+          <img
+                  src="img/adidas-campus.jpg"
+                  class="card-img-top sneaker-card-image"
+                  alt="Adidas Campus 00s sneakers"
+          >
+
+          <div class="card-body d-flex flex-column p-3 p-lg-4">
+            <p class="text-warning mb-2">Adidas</p>
+
+            <h3 class="card-title h5">Adidas Campus 00s</h3>
+
+            <p class="card-text">
+              Classic streetwear sneakers with a suede upper
+              and a comfortable fit.
+            </p>
+
+            <p class="fw-bold text-warning mb-3">58,000 KZT</p>
+
+            <a
+                    class="btn btn-outline-warning btn-sm mt-auto align-self-start"
+                    href="catalog.html"
+            >
+              View product
+            </a>
+          </div>
+        </article></div>
+            <div class="col-12 col-md-6 col-lg-4">
+              <article class="card h-100 bg-dark text-white border-secondary">
+          <img
+                  src="img/new-balance.jpg"
+                  class="card-img-top sneaker-card-image"
+                  alt="New Balance 530 sneakers"
+          >
+
+          <div class="card-body d-flex flex-column p-3 p-lg-4">
+            <p class="text-warning mb-2">New Balance</p>
+
+            <h3 class="card-title h5">New Balance 530</h3>
+
+            <p class="card-text">
+              Retro running-inspired sneakers with breathable
+              materials for daily comfort.
+            </p>
+
+            <p class="fw-bold text-warning mb-3">62,000 KZT</p>
+
+            <a
+                    class="btn btn-outline-warning btn-sm mt-auto align-self-start"
+                    href="catalog.html"
+            >
+              View product
+            </a>
+          </div>
+        </article> </div>
+
+      </div>
+  </section>
+  <!-- Task 7: Bootstrap Carousel -->
+  <section class="container py-3 py-md-4 py-lg-5">
+    <h2 class="text-center mb-4">Explore Our Collection</h2>
+
+    <div class="row justify-content-center">
+      <div class="col-12 col-lg-10">
+
+        <div
+                id="sneakerCarousel"
+                class="carousel slide"
+                aria-label="Sneaker collection"
+        >
+
+          <!-- Nine slide indicators -->
+          <div class="carousel-indicators">
+            <button type="button" data-bs-target="#sneakerCarousel"
+                    data-bs-slide-to="0" class="active"
+                    aria-current="true" aria-label="Slide 1"></button>
+
+            <button type="button" data-bs-target="#sneakerCarousel"
+                    data-bs-slide-to="1" aria-label="Slide 2"></button>
+
+            <button type="button" data-bs-target="#sneakerCarousel"
+                    data-bs-slide-to="2" aria-label="Slide 3"></button>
+
+            <button type="button" data-bs-target="#sneakerCarousel"
+                    data-bs-slide-to="3" aria-label="Slide 4"></button>
+
+            <button type="button" data-bs-target="#sneakerCarousel"
+                    data-bs-slide-to="4" aria-label="Slide 5"></button>
+
+            <button type="button" data-bs-target="#sneakerCarousel"
+                    data-bs-slide-to="5" aria-label="Slide 6"></button>
+
+            <button type="button" data-bs-target="#sneakerCarousel"
+                    data-bs-slide-to="6" aria-label="Slide 7"></button>
+
+            <button type="button" data-bs-target="#sneakerCarousel"
+                    data-bs-slide-to="7" aria-label="Slide 8"></button>
+
+            <button type="button" data-bs-target="#sneakerCarousel"
+                    data-bs-slide-to="8" aria-label="Slide 9"></button>
+          </div>
+
+          <!-- Images -->
+          <div class="carousel-inner rounded-4">
+
+            <div class="carousel-item active">
+              <img src="img/nike-air-max.jpg"
+                   class="d-block w-100"
+                   alt="Nike Air Max 270 sneakers">
+            </div>
+
+            <div class="carousel-item">
+              <img src="img/nike-air-force.jpg"
+                   class="d-block w-100"
+                   alt="Nike Air Force 1 sneakers">
+            </div>
+
+            <div class="carousel-item">
+              <img src="img/adidas-campus.jpg"
+                   class="d-block w-100"
+                   alt="Adidas Campus sneakers">
+            </div>
+
+            <div class="carousel-item">
+              <img src="img/adidas-forum-low.jpg"
+                   class="d-block w-100"
+                   alt="Adidas Forum Low sneakers">
+            </div>
+
+            <div class="carousel-item">
+              <img src="img/new-balance.jpg"
+                   class="d-block w-100"
+                   alt="New Balance 530 sneakers">
+            </div>
+
+            <div class="carousel-item">
+              <img src="img/newbalance574.jpg"
+                   class="d-block w-100"
+                   alt="New Balance 574 sneakers">
+            </div>
+
+            <div class="carousel-item">
+              <img src="img/puma-rsx.jpg"
+                   class="d-block w-100"
+                   alt="Puma RS-X sneakers">
+            </div>
+
+            <div class="carousel-item">
+              <img src="img/converse-chuck.jpg"
+                   class="d-block w-100"
+                   alt="Converse Chuck Taylor sneakers">
+            </div>
+
+            <div class="carousel-item">
+              <img src="img/vans-old-skool.jpg"
+                   class="d-block w-100"
+                   alt="Vans Old Skool sneakers">
+            </div>
+
+          </div>
+
+          <!-- Previous slide -->
+          <button
+                  class="carousel-control-prev"
+                  type="button"
+                  data-bs-target="#sneakerCarousel"
+                  data-bs-slide="prev"
+          >
+          <span
+                  class="carousel-control-prev-icon bg-dark rounded-circle p-3"
+                  aria-hidden="true"
+          ></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+
+          <!-- Next slide -->
+          <button
+                  class="carousel-control-next"
+                  type="button"
+                  data-bs-target="#sneakerCarousel"
+                  data-bs-slide="next"
+          >
+          <span
+                  class="carousel-control-next-icon bg-dark rounded-circle p-3"
+                  aria-hidden="true"
+          ></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Ordered list -->
+  <section class="shopping-steps">
+    <div class="steps-content">
+      <p class="section-label text-dark">HOW IT WORKS</p>
+      <h2>Order Your Sneakers in Three Steps</h2>
+
+      <ol>
+        <li>Select your favorite sneaker model.</li>
+        <li>Choose the correct size and color.</li>
+        <li>Send your order request through our contact page.</li>
+      </ol>
+
+      <a class="btn btn-outline-dark mt-3" href="contact.html">
+        Make an Order
+      </a>
+    </div>
+  </section>
+
+<section class="interactive-section" aria-labelledby="faq-heading"><p class="section-label">NEED HELP?</p><h2 id="faq-heading">Frequently Asked Questions</h2><div class="faq-item"><h3><button class="faq-question" type="button" aria-expanded="false" aria-controls="faq-0" id="question-0">How do I choose my size?<span aria-hidden="true">+</span></button></h3><div class="faq-answer" id="faq-0" role="region" aria-labelledby="question-0" inert><div><p>Check the sizes listed in the catalog, then select your size in the order request form.</p></div></div></div><div class="faq-item"><h3><button class="faq-question" type="button" aria-expanded="false" aria-controls="faq-1" id="question-1">How can I request a pair?<span aria-hidden="true">+</span></button></h3><div class="faq-answer" id="faq-1" role="region" aria-labelledby="question-1" inert><div><p>Open the Contact page, choose a sneaker model and size, and complete the demo order form.</p></div></div></div><div class="faq-item"><h3><button class="faq-question" type="button" aria-expanded="false" aria-controls="faq-2" id="question-2">Does this website accept payments?<span aria-hidden="true">+</span></button></h3><div class="faq-answer" id="faq-2" role="region" aria-labelledby="question-2" inert><div><p>No. STEPUP is a student project. Forms demonstrate JavaScript and do not place real orders.</p></div></div></div></section>
+</main>
+
+<!-- Website footer -->
+<footer>
+  <div class="site-tools">
+    <button class="button" type="button" id="change-background">Change Background</button>
+    <button class="button" type="button" id="sound-toggle" aria-pressed="false">Sound: off</button>
+    <button class="button" type="button" id="open-subscription">Subscribe</button>
+  </div>
+  <p>Current local date and time: <time id="current-time"></time></p>
+
+  <p>
+    Created by Tauyekel Islam and Tazhmaganbetov Rakhat | Group SE-2508
+  </p>
+  <p>&copy; 2026 STEPUP Sneaker Store. All rights reserved.</p>
+</footer>
+<script src="vendor/bootstrap/bootstrap.bundle.min.js"></script>
+
+<dialog id="subscription-dialog" aria-labelledby="subscription-heading">
+  <button type="button" id="close-subscription" class="dialog-close" aria-label="Close subscription form">&times;</button>
+  <h2 id="subscription-heading">Stay in the Loop</h2>
+  <p>Try our demo subscription. No email is sent or saved.</p>
+  <form id="subscription-form" class="demo-form" novalidate>
+    <label for="subscription-email">Email</label>
+
+    <input
+            id="subscription-email"
+            type="text"
+            inputmode="email"
+            autocomplete="email"
+            aria-describedby="subscription-error">
+
+    <p class="field-error" id="subscription-error"></p>
+    <button class="button" type="submit">Check Subscription</button>
+    <p id="subscription-result" role="status"></p>
+  </form>
+</dialog>
+<script src="./js/script.js" defer></script>
+<script src="./js/assignment5.js" defer></script>
+
+<script src="./js/validation.js" defer></script>
+<div id="store-toast" role="status" aria-live="polite" hidden></div>
+
+<!-- Shared account navigation -->
+<script src="./js/navigation.js" defer></script>
+
+</body>
+</html>

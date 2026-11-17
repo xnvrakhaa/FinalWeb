@@ -1,0 +1,218 @@
+
+/* ==========================================
+   STEPUP - Assignment 5
+   Existing styles + form validation
+   ========================================== */
+
+/* Hide inactive elements */
+[hidden] {
+  display: none !important;
+}
+
+/* ==========================================
+   1. CATALOG FILTERS
+   ========================================== */
+
+.catalog-filters {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  align-items: end;
+  padding: 1.25rem;
+  margin-bottom: 1rem;
+  border: 1px solid #555;
+  border-radius: 12px;
+  background: #202020;
+}
+
+.catalog-filters > div {
+  flex: 1 1 170px;
+}
+
+.catalog-filters label {
+  display: block;
+  margin-bottom: 0.4rem;
+  font-weight: bold;
+}
+
+.catalog-filters select,
+.catalog-filters input {
+  width: 100%;
+  min-height: 44px;
+  padding: 0.6rem;
+  border: 1px solid #888;
+  border-radius: 6px;
+  color: white;
+  background: #292929;
+  font: inherit;
+}
+
+.catalog-filters .button {
+  min-height: 44px;
+}
+
+/* ==========================================
+   2. PRODUCT RATINGS
+   ========================================== */
+
+.product-rating {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 1.2rem;
+}
+
+.rating-star {
+  min-width: 44px;
+  min-height: 44px;
+  padding: 0;
+  border: 0;
+  background: transparent;
+  color: #aaa;
+  font-size: 1.8rem;
+  transition: color 0.15s, transform 0.15s;
+  cursor: pointer;
+}
+
+.rating-star.is-selected {
+  color: #ffcf33;
+}
+
+.rating-star:hover {
+  transform: scale(1.15);
+}
+
+.rating-star:focus-visible {
+  outline: 2px solid #ffcf33;
+  outline-offset: 3px;
+}
+
+.rating-message {
+  color: #ddd;
+  font-size: 0.85rem;
+  margin: 0.3rem 0 0;
+}
+
+/* ==========================================
+   3. MULTI-STEP ORDER FORM
+   ========================================== */
+
+.order-step {
+  border: 0;
+  padding: 0;
+  margin: 1rem 0;
+  min-width: 0;
+}
+
+.order-step legend {
+  font-size: 1.2rem;
+  color: #ffcf33;
+  margin-bottom: 1rem;
+}
+
+.order-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.65rem;
+}
+
+.order-actions .button {
+  min-height: 44px;
+}
+
+#order-progress {
+  margin-top: 1.5rem;
+  color: #ffcf33;
+}
+
+#order-summary {
+  padding: 1rem;
+  background: #171717;
+  border-radius: 8px;
+  overflow-wrap: anywhere;
+}
+
+#order-summary dt {
+  color: #ffcf33;
+}
+
+#order-summary dd {
+  margin: 0 0 0.6rem;
+  white-space: pre-wrap;
+}
+
+/* ==========================================
+   4. FORM VALIDATION - NEW
+   ========================================== */
+
+/* Red border on invalid fields */
+#order-form [aria-invalid="true"] {
+  border-color: #ff8585 !important;
+}
+
+/* Error messages below fields */
+#order-form .field-error {
+  color: #ffaaaa;
+  font-size: 0.875rem;
+  margin-top: 6px;
+  margin-bottom: 0;
+  line-height: 1.5;
+}
+
+/* Hide empty error messages */
+#order-form .field-error:empty {
+  display: none;
+}
+
+/* Keyboard focus */
+#order-form input:focus-visible,
+#order-form select:focus-visible,
+#order-form textarea:focus-visible {
+  outline: 2px solid #ffbf00;
+  outline-offset: 2px;
+}
+
+/* ==========================================
+   5. LIGHT MODE VALIDATION
+   ========================================== */
+
+html[data-theme="light"] #order-form .field-error {
+  color: #a30000;
+}
+
+html[data-theme="light"]
+#order-form [aria-invalid="true"] {
+  border-color: #c62828 !important;
+}
+
+/* ==========================================
+   6. RESPONSIVE DESIGN
+   ========================================== */
+
+@media (max-width: 576px) {
+  .catalog-filters {
+    padding: 1rem;
+    gap: 0.75rem;
+  }
+
+  .catalog-filters > div {
+    flex-basis: 100%;
+  }
+
+  .order-actions {
+    gap: 0.5rem;
+  }
+}
+
+/* ==========================================
+   7. ACCESSIBILITY
+   ========================================== */
+
+@media (prefers-reduced-motion: reduce) {
+  .rating-star {
+    transition: none;
+  }
+
+  .rating-star:hover {
+    transform: none;
+  }
+}

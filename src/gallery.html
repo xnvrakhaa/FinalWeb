@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0"
+  >
+
+  <!-- Created by Tazhmaganbetov Rakhat and Tauyekel Islam, SE-2508 -->
+
+  <title>Gallery | STEPUP Sneaker Store</title>
+
+  <link
+          rel="stylesheet"
+          href="./vendor/bootstrap/bootstrap.min.css"
+  >
+  <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="./css/assignment5.css">
+  <link rel="stylesheet" href="./css/assignment6.css">
+  <script src="https://code.jquery.com/jquery-4.0.0.min.js" defer></script>
+  <script src="vendor/jquery/jquery-fallback.js" defer></script>
+  <script src="./js/theme.js" defer></script>
+  <script src="./js/assignment6.js" defer></script>
+</head>
+
+<body class="gallery-layout">
+<div id="scroll-progress" role="progressbar" aria-label="Page scroll progress" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0"></div>
+
+<!-- Grid area: Header -->
+<header id="main-header">
+  <nav
+          class="navbar bootstrap-nav navbar-expand-lg bg-dark py-3"
+          data-bs-theme="dark"
+          aria-label="Main navigation"
+  >
+    <div class="container">
+
+      <a
+              class="navbar-brand text-warning fw-bold fs-3"
+              href="index.html"
+      >
+        STEPUP
+      </a>
+
+      <button
+              class="navbar-toggler"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#mainMenu"
+              aria-controls="mainMenu"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <button type="button" class="btn btn-outline-warning ms-3" id="theme-toggle" aria-pressed="false">Day mode</button>
+      <div class="collapse navbar-collapse" id="mainMenu">
+        <ul class="navbar-nav ms-auto gap-lg-3">
+
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">
+              Home
+            </a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="catalog.html">
+              Catalog
+            </a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link active fw-bold"
+               aria-current="page"
+               href="gallery.html">
+              Gallery
+            </a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="about.html">
+              About Us
+            </a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="contact.html">
+              Contact
+            </a>
+          </li>
+
+        </ul>
+      </div>
+
+    </div>
+  </nav>
+</header>
+
+<!-- Grid area: Sidebar -->
+<aside class="gallery-sidebar">
+  <h2>Collections</h2>
+
+  <p>
+    Explore our sneaker gallery by brand and style.
+  </p>
+
+  <ul class="sidebar-menu">
+    <li>
+      <a href="#all-sneakers">All Sneakers</a>
+    </li>
+
+    <li>
+      <a href="#nike">Nike</a>
+    </li>
+
+    <li>
+      <a href="#adidas">Adidas</a>
+    </li>
+
+    <li>
+      <a href="#new-balance">New Balance</a>
+    </li>
+
+    <li>
+      <a href="#coming-soon">Coming Soon</a>
+    </li>
+  </ul>
+
+  <div class="sidebar-note">
+    <h3>STEPUP Style</h3>
+
+    <p>
+      Find sneakers for sport, everyday life and
+      street fashion.
+    </p>
+  </div>
+</aside>
+
+<!-- Grid area: Main -->
+<main class="gallery-main">
+
+  <section class="gallery-introduction">
+    <p class="section-label">STEPUP COLLECTION</p>
+
+    <h1>Sneaker Gallery</h1>
+
+    <p>
+      Explore our current sneaker collection and discover
+      three new models that will be available soon.
+    </p>
+  </section>
+
+  <!-- Gallery container -->
+  <section
+    class="image-gallery"
+    id="all-sneakers"
+    aria-label="STEPUP sneaker gallery"
+  >
+
+    <!-- Image 1 -->
+    <figure class="gallery-item" id="nike">
+      <img class="lazy-image" data-src="./img/nike-air-max.jpg" src="data:image/gif;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs="
+        alt="Nike Air Max 270 sneakers"
+      >
+
+      <figcaption>
+        <span class="gallery-brand">Nike</span>
+        <strong>Nike Air Max 270</strong>
+      </figcaption>
+    </figure>
+
+    <!-- Image 2 -->
+    <figure class="gallery-item">
+      <img class="lazy-image" data-src="./img/nike-air-force.jpg" src="data:image/gif;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs="
+        alt="Nike Air Force 1 sneakers"
+      >
+
+      <figcaption>
+        <span class="gallery-brand">Nike</span>
+        <strong>Nike Air Force 1</strong>
+      </figcaption>
+    </figure>
+
+    <!-- Image 3 -->
+    <figure class="gallery-item" id="adidas">
+      <img class="lazy-image" data-src="./img/adidas-campus.jpg" src="data:image/gif;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs="
+        alt="Adidas Campus 00s sneakers"
+      >
+
+      <figcaption>
+        <span class="gallery-brand">Adidas</span>
+        <strong>Adidas Campus 00s</strong>
+      </figcaption>
+    </figure>
+
+    <!-- Image 4 -->
+    <figure class="gallery-item">
+      <img class="lazy-image" data-src="./img/adidas-forum-low.jpg" src="data:image/gif;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs="
+        alt="Adidas Forum Low sneakers"
+      >
+
+      <figcaption>
+        <span class="gallery-brand">Adidas</span>
+        <strong>Adidas Forum Low</strong>
+      </figcaption>
+    </figure>
+
+    <!-- Image 5 -->
+    <figure class="gallery-item" id="new-balance">
+      <img class="lazy-image" data-src="./img/new-balance.jpg" src="data:image/gif;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs="
+        alt="New Balance 530 sneakers"
+      >
+
+      <figcaption>
+        <span class="gallery-brand">New Balance</span>
+        <strong>New Balance 530</strong>
+      </figcaption>
+    </figure>
+
+    <!-- Image 6 -->
+    <figure class="gallery-item">
+      <img class="lazy-image" data-src="./img/newbalance574.jpg" src="data:image/gif;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs="
+        alt="New Balance 574 sneakers"
+      >
+
+      <figcaption>
+        <span class="gallery-brand">New Balance</span>
+        <strong>New Balance 574</strong>
+      </figcaption>
+    </figure>
+
+    <!-- New image 7 -->
+    <figure
+      class="gallery-item coming-soon-item"
+      id="coming-soon"
+    >
+      <img class="lazy-image" data-src="./img/puma-rsx.jpg" src="data:image/gif;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs="
+        alt="Puma RS-X sneakers coming soon"
+      >
+
+      <span class="coming-soon-badge">
+                    Soon in shop
+                </span>
+
+      <figcaption>
+        <span class="gallery-brand">Puma</span>
+        <strong>Puma RS-X</strong>
+      </figcaption>
+    </figure>
+
+    <!-- New image 8 -->
+    <figure class="gallery-item coming-soon-item">
+      <img class="lazy-image" data-src="./img/converse-chuck.jpg" src="data:image/gif;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs="
+        alt="Converse Chuck 70 sneakers coming soon"
+      >
+
+      <span class="coming-soon-badge">
+                    Soon in shop
+                </span>
+
+      <figcaption>
+        <span class="gallery-brand">Converse</span>
+        <strong>Converse Chuck 70</strong>
+      </figcaption>
+    </figure>
+
+    <!-- New image 9 -->
+    <figure class="gallery-item coming-soon-item">
+      <img class="lazy-image" data-src="./img/vans-old-skool.jpg" src="data:image/gif;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs="
+        alt="Vans Old Skool sneakers coming soon"
+      >
+
+      <span class="coming-soon-badge">
+                    Soon in shop
+                </span>
+
+      <figcaption>
+        <span class="gallery-brand">Vans</span>
+        <strong>Vans Old Skool</strong>
+      </figcaption>
+    </figure>
+
+  </section>
+
+</main>
+
+<!-- Grid area: Footer -->
+<footer>
+  <div class="site-tools">
+    <button class="button" type="button" id="change-background">Change Background</button>
+    <button class="button" type="button" id="sound-toggle" aria-pressed="false">Sound: off</button>
+    <button class="button" type="button" id="open-subscription">Subscribe</button>
+  </div>
+  <p>Current local date and time: <time id="current-time"></time></p>
+
+  <p>
+    Created by Tazhmaganbetov Rakhat and Tauyekel Islam |
+    Group SE-2508
+  </p>
+
+  <p>
+    &copy; 2026 STEPUP Sneaker Store.
+    All rights reserved.
+  </p>
+</footer>
+<script src="vendor/bootstrap/bootstrap.bundle.min.js"></script>
+
+<dialog id="subscription-dialog" aria-labelledby="subscription-heading">
+  <button type="button" id="close-subscription" class="dialog-close" aria-label="Close subscription form">&times;</button>
+  <h2 id="subscription-heading">Stay in the Loop</h2>
+  <p>Try our demo subscription. No email is sent or saved.</p>
+  <form id="subscription-form" class="demo-form" novalidate>
+    <label for="subscription-email">Email</label>
+
+    <input
+            id="subscription-email"
+            type="text"
+            inputmode="email"
+            autocomplete="email"
+            aria-describedby="subscription-error">
+
+    <p class="field-error" id="subscription-error"></p>
+    <button class="button" type="submit">Check Subscription</button>
+    <p id="subscription-result" role="status"></p>
+  </form>
+</dialog>
+<script src="./js/script.js" defer></script>
+<script src="./js/assignment5.js" defer></script>
+<script src="./js/validation.js" defer></script>
+
+<div id="store-toast" role="status" aria-live="polite" hidden></div>
+
+<!-- Shared account navigation -->
+<script src="./js/navigation.js" defer></script>
+
+</body>
+</html>
