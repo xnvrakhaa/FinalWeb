@@ -6,17 +6,17 @@
     <meta name="viewport"
           content="width=device-width, initial-scale=1.0">
 
-    <title>Log In | STEPUP Sneaker Store</title>
+    <title>My Profile | STEPUP Sneaker Store</title>
 
     <link rel="stylesheet"
-          href="./vendor/bootstrap/bootstrap.min.css">
-    <link rel="stylesheet" href="./css/style.css">
-    <link rel="stylesheet" href="./css/assignment5.css">
-    <link rel="stylesheet" href="./css/assignment6.css">
-    <link rel="stylesheet" href="./css/auth.css">
+          href="vendor/bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/assignment5.css">
+    <link rel="stylesheet" href="css/assignment6.css">
+    <link rel="stylesheet" href="css/auth.css">
 
-    <script src="./js/theme.js" defer></script>
-    <script src="./js/auth.js" defer></script>
+    <script src="js/theme.js" defer></script>
+    <script src="js/auth.js" defer></script>
 </head>
 
 <body>
@@ -84,8 +84,8 @@
                     <li class="nav-item">
                         <a class="nav-link active fw-bold"
                            aria-current="page"
-                           href="login.html">
-                            Log In
+                           href="profile.html">
+                            Profile
                         </a>
                     </li>
                 </ul>
@@ -96,58 +96,39 @@
 
 <main id="main-content">
     <section class="auth-section">
-        <div class="auth-card">
+        <div class="auth-card" id="profile-card" hidden>
 
-            <p class="section-label">WELCOME BACK</p>
-            <h1>Log In to STEPUP</h1>
+            <p class="section-label">STEPUP MEMBER</p>
+            <h1>My Profile</h1>
 
-            <p class="auth-description">
-                Enter your demo account details to continue.
-            </p>
+            <div class="profile-avatar"
+                 aria-hidden="true">S</div>
 
-            <form id="login-form" novalidate>
+            <h2 id="profile-welcome"></h2>
 
-                <div class="auth-field">
-                    <label for="login-email">Email</label>
-                    <input
-                            id="login-email"
-                            name="email"
-                            type="text"
-                            inputmode="email"
-                            autocomplete="email"
-                            aria-describedby="login-email-error">
+            <div class="profile-details">
+                <p>
+                    <strong>Full Name:</strong>
+                    <span id="profile-name"></span>
+                </p>
 
-                    <p class="field-error"
-                       id="login-email-error"></p>
-                </div>
+                <p>
+                    <strong>Email:</strong>
+                    <span id="profile-email"></span>
+                </p>
+            </div>
 
-                <div class="auth-field">
-                    <label for="login-password">Password</label>
-                    <input
-                            id="login-password"
-                            name="password"
-                            type="password"
-                            autocomplete="current-password"
-                            aria-describedby="login-password-error">
+            <a class="button auth-submit auth-link-button"
+               href="catalog.html">
+                Explore Sneakers
+            </a>
 
-                    <p class="field-error"
-                       id="login-password-error"></p>
-                </div>
-
-                <button type="submit"
-                        class="button auth-submit">
-                    Log In
-                </button>
-
-                <p id="login-result"
-                   role="status"
-                   aria-live="polite"></p>
-            </form>
-
-            <p class="auth-switch">
-                Don't have an account?
-                <a href="signup.html">Create Account</a>
-            </p>
+            <button
+                    type="button"
+                    class="button auth-submit"
+                    id="logout-button">
+                Log Out
+            </button>
 
         </div>
     </section>
@@ -164,11 +145,11 @@
     </p>
 </footer>
 
-<script src="./vendor/bootstrap/bootstrap.bundle.min.js">
+<script src="vendor/bootstrap/bootstrap.bundle.min.js">
 </script>
 
 <!-- Shared account navigation -->
-<script src="./js/navigation.js" defer></script>
+<script src="js/navigation.js" defer></script>
 
 </body>
 </html>
